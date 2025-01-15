@@ -7,16 +7,16 @@ UE will disconnect to gNB
 ## Purpose of the test.
 Verify throughtput as per following Parameter in Integration of OAI gNB(BBU version/branch: develop/commit 68191088a) + JURA RU(SDK v2.2.2) on R750.
 
-Number of carriers (J) = 1
-Number of layers (ν) = 2
-Modulation (Q = 6) = 64QAM
-Scaling factor (f) = 1
-Band = n78
-Sub carrier spacing (μ) = 30 KHz
-Bandwidth = 100 MHz
-Maximum RB allocation = 273
-Overhead = 0.14
-Data throughput = 10-6 * 1 * 2 * 6 * 1 * (948/1024) * (273 * 12) * (14 * 21) / 10-3 * (1 - 0.14) = *876.4 Mbps*
+- Number of carriers (J) = 1
+- Number of layers (ν) = 2
+- Modulation (Q = 6) = 64QAM
+- Scaling factor (f) = 1
+- Band = n78
+- Sub carrier spacing (μ) = 30 KHz
+- Bandwidth = 100 MHz
+- Maximum RB allocation = 273
+- Overhead = 0.14
+- Data throughput = 10-6 * 1 * 2 * 6 * 1 * (948/1024) * (273 * 12) * (14 * 21) / 10-3 * (1 - 0.14) = *876.4 Mbps*
 
 
 ## Test 1:
