@@ -6,17 +6,17 @@ UE will disconnect to gNB
 
 ## 
 
-# Test 1:
+## Test 1:
 
-## Test configuration: 
+### Test configuration: 
 - Configure gNB as per gnb.sa.band78.273prb.fhi72.4x4-liteon.conf
 - MIMO scheme 4T4R
 
-## Lab tools setup: 
-Turn on MTK tool to capturre logs.
-Install ping-tool to verify throught
+### Lab tools setup: 
+- Turn on MTK tool to capturre logs.
+- Install ping-tool to verify throught
 -
-## Text Prrocedure:
+### Text Prrocedure:
 1. Turn on the flight mode.
 2. Turn Off the flight mode. 
 3. Device attaches to cell n78.
@@ -30,10 +30,10 @@ Install ping-tool to verify throught
 9. UE(DUT) able to receive data.
 10. DUT(UE) stop receiving data and UE context released.
 
-## Expected Result:
+### Result:
 | Parameters | Expected  | Actual |
 | :----: | :---: | :-------: |
-|        |       |         |
+| Throughput       |       |         |
 |        |       |          |
 
 
@@ -44,10 +44,10 @@ Install ping-tool to verify throught
 - MIMO Scheme 2T2R
 
 ## Lab tools setup: 
-Turn on MTK tool to capturre logs.
-Install ping-tool to verify throught
+- Turn on MTK tool to capturre logs.
+- Install ping-tool to verify throught
 
-## Text Prrocedure:
+### Text Procedure:
 1. Turn on the flight mode.
 2. Turn Off the flight mode. 
 3. Device attaches to cell n78.
@@ -57,23 +57,23 @@ Install ping-tool to verify throught
 7. From server send <iperf3 -s 192.168.8.21 -p 5201>
 8. From UE iperf tool send <iperf3 -u -c 192.168.8.21 -b <80> 100-t 30 -i 5 -l 1300 -p 5201.
 
-## Expected Result:
+### Result:
 | Parameters | Expected  | Actual |
 | :----: | :---: | :-------: |
-|        |       |         |
+| Throughput       |       |         |
 |        |       |          |
 
-# Test 3.
+## Test 3.
 
-## Test configuration: 
+### Test configuration: 
 - Configure gNB as per gnb.sa.band78.273prb.fhi72.4x4-liteon.conf
 - MIMO Scheme 2T2R
 
-## Lab tools setup: 
-Turn on MTK tool to capturre logs.
-Install ping-tool to verify throught
+### Lab tools setup: 
+- Turn on MTK tool to capturre logs.
+- Install ping-tool to verify throught
 
-## Text Prrocedure:
+### Text Procedure:
 1. Turn on the flight mode.
 2. Turn Off the flight mode. 
 3. Device attaches to cell n78.
@@ -83,8 +83,8 @@ Install ping-tool to verify throught
 7. From server send <iperf3 -s 192.168.8.21 -p 5201>
 8. From UE iperf tool send <iperf3 -u -c 192.168.8.21 -b <100> 100-t 30 -i 5 -l 1300 -p 5201.
 
-## Expected Result:
+### Result:
 | Parameters | Expected  | Actual |
 | :----: | :---: | :-------: |
-|        |       |         |
+|  Throughtput      |       |         |
 |        |       |          |
