@@ -23,6 +23,7 @@ Verify throughtput as per following Parameter in Integration of OAI gNB(BBU vers
 - #### Core Network 
     - AMF IP Address: The Access and Mobility Management Function (AMF) IP address is specified in the cu.conf configuration file.
         amf_ip_address = 
+        
             ipv4 = "192.168.1.100";
             ipv6 = "192:168:30::17";
             active = "yes";
