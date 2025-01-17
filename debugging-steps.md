@@ -18,19 +18,46 @@ Verify throughtput as per following Parameter in Integration of OAI gNB(BBU vers
 - Overhead = 0.14
 - Data throughput = 10-6 * 1 * 2 * 6 * 1 * (948/1024) * (273 * 12) * (14 * 21) / 10-3 * (1 - 0.14) = *876.4 Mbps*
 
+### Test configuration:
 
-## Test 1:
+- #### Core Network 
+    - AMF IP Address: The Access and Mobility Management Function (AMF) IP address is specified in the cu.conf configuration file.
+        - amf_ip_address = (
+  {
+    ipv4 = "192.168.1.100";
+    ipv6 = "192:168:30::17";
+    active = "yes";
+    preference = "ipv4";
+  }
+);
+    - PLMN Configuration: 
+        plmn_list = (
+  {
+    mcc = 208;
+    mnc = 93;
+    mnc_length = 2;
+    snssaiList = (
+      {
+        sst = 1;
+      }
+    );
+  }
+);
 
-### Test configuration: 
 - Configure gNB as per gnb.sa.band78.273prb.fhi72.4x4-liteon.conf
-- MIMO scheme 4T4R
-- slot format- DDDSU
 - DUT(UE) Release 15 (Can be checked in UECapabilityinfo)
 
 ### Lab tools setup: 
 - Turn on MTK tool to capturre logs.
 - Install ping-tool to verify throught
 -
+
+
+## Test Case 1:
+### Test setup
+- MIMO scheme 4T4R
+- slot format- DDDSU
+
 ### Text Prrocedure:
 1. Turn on the flight mode.
 2. Turn Off the flight mode. 
@@ -52,15 +79,12 @@ Verify throughtput as per following Parameter in Integration of OAI gNB(BBU vers
 |        |       |          |
 
 
-## Test 2.
+## Test Case 2.
 
 ## Test configuration: 
-- Configure gNB as per gnb.sa.band78.273prb.fhi72.4x4-liteon.conf
 - MIMO Scheme 2T2R
+- slot format- DDDSU
 
-## Lab tools setup: 
-- Turn on MTK tool to capturre logs.
-- Install ping-tool to verify throught
 
 ### Text Procedure:
 1. Turn on the flight mode.
@@ -78,15 +102,12 @@ Verify throughtput as per following Parameter in Integration of OAI gNB(BBU vers
 | Throughput       |       |         |
 |        |       |          |
 
-## Test 3.
+## Test Case 3.
 
 ### Test configuration: 
-- Configure gNB as per gnb.sa.band78.273prb.fhi72.4x4-liteon.conf
 - MIMO Scheme 2T2R
+- slot format- DDDSU
 
-### Lab tools setup: 
-- Turn on MTK tool to capturre logs.
-- Install ping-tool to verify throught
 
 ### Text Procedure:
 1. Turn on the flight mode.
