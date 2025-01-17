@@ -18,31 +18,25 @@ Verify throughtput as per following Parameter in Integration of OAI gNB(BBU vers
 - Overhead = 0.14
 - Data throughput = 10-6 * 1 * 2 * 6 * 1 * (948/1024) * (273 * 12) * (14 * 21) / 10-3 * (1 - 0.14) = *876.4 Mbps*
 
-### Test configuration:
+## Test configuration:
 
 - #### Core Network 
     - AMF IP Address: The Access and Mobility Management Function (AMF) IP address is specified in the cu.conf configuration file.
-        - amf_ip_address = (
-  {
-    ipv4 = "192.168.1.100";
-    ipv6 = "192:168:30::17";
-    active = "yes";
-    preference = "ipv4";
-  }
-);
+        - amf_ip_address = 
+            ipv4 = "192.168.1.100";
+            ipv6 = "192:168:30::17";
+            active = "yes";
+            preference = "ipv4";
+  
     - PLMN Configuration: 
-        plmn_list = (
-  {
-    mcc = 208;
-    mnc = 93;
-    mnc_length = 2;
-    snssaiList = (
-      {
-        sst = 1;
-      }
-    );
-  }
-);
+        plmn_list =
+  
+            mcc = 208;
+            mnc = 93;
+            mnc_length = 2;
+            snssaiList = 
+                sst = 1;
+   
 
 - Configure gNB as per gnb.sa.band78.273prb.fhi72.4x4-liteon.conf
 - DUT(UE) Release 15 (Can be checked in UECapabilityinfo)
