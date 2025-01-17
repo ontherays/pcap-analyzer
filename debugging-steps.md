@@ -23,7 +23,7 @@ Verify throughtput as per following Parameter in Integration of OAI gNB(BBU vers
 - #### Core Network 
     - AMF IP Address: The Access and Mobility Management Function (AMF) IP address is specified in the cu.conf configuration file.
         amf_ip_address = 
-        
+
             ipv4 = "192.168.1.100";
             ipv6 = "192:168:30::17";
             active = "yes";
@@ -90,6 +90,8 @@ Verify throughtput as per following Parameter in Integration of OAI gNB(BBU vers
 6. Verify network icon shows '5G' (in Idle mode).
 7. From server send <iperf3 -s 192.168.8.21 -p 5201>
 8. From UE iperf tool send <iperf3 -u -c 192.168.8.21 -b <80> 100-t 30 -i 5 -l 1300 -p 5201.
+9. UE(DUT) able to receive data.
+10. DUT(UE) stop receiving data and UE context released.
 
 ### Result:
 | Parameters | Expected  | Actual |
@@ -113,6 +115,8 @@ Verify throughtput as per following Parameter in Integration of OAI gNB(BBU vers
 6. Verify network icon shows '5G' (in Idle mode).
 7. From server send <iperf3 -s 192.168.8.21 -p 5201>
 8. From UE iperf tool send <iperf3 -u -c 192.168.8.21 -b <100> 100-t 30 -i 5 -l 1300 -p 5201.
+9. UE(DUT) able to receive data.
+10. DUT(UE) stop receiving data and UE context released.
 
 ### Result:
 | Parameters | Expected  | Actual |
